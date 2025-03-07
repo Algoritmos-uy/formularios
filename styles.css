@@ -12,7 +12,7 @@ form {
     padding: 24px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 label {
     font-weight: bold;
@@ -34,13 +34,50 @@ button {
 button[type="submit"] {
     background-color: #4caf50;
     color: white;
+    font-weight: bold;
     border: none;
 }
 button[type="reset"] {
     background-color: #f44336;
     color: white;
+    font-weight: bold;
     border: none;
 }
 button:hover {
     opacity: 0.9;
+}
+
+meter {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 1rem;
+    /* Desactiva el estilo predeterminado del navegador */
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    background: #e0e0e0; /*Fondo de la barra */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Fondo de la barra para navegadores basados en Webkit (como Chrome y Edge) */
+meter::-webkit-meter-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+/* Parte rellena del progreso en navegadores basados en Webkit */
+meter::-webkit-meter-value {
+    background: blue; /* Cambia el color aquí */
+    border-radius: 10px 0 0 10px;
+}
+
+/* Fondo y progreso para Firefox */
+meter::-moz-meter-bar {
+    background: blue; /* Cambia el color aquí */
+    border-radius: 10px 0 0 10px;
+}
+
+meter::-moz-meter-optimum {
+    background: blue; /* Firefox aplica esto en valores óptimos */
 }
