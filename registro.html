@@ -9,13 +9,38 @@
 </head>
 
 <body>
-    <form action="" method="post">
-        Nombre: <input type="text" name="nombre" required placeholder="Ingresa tu nombre completo"><br>
-        Edad: <input type="number" name="edad" required placeholder="Ingresa tu edad"><br>
-        Correo: <input type="email" name="correo" required placeholder="Ingresa tu email"><br>
-        Password:<input type="password" name="password" required placeholder="Ingresa la contraseña"><br>
-        <button type="submit">Enviar</button>
-    </form>
+
+<!-- Formulario de registro de usuario -->
+<!-- action = destino donde se enviarán los datos
+     method = "post" es más seguro que "get" para contraseñas -->
+<form action="" method="post">
+
+    <!-- Campo de texto para el nombre completo
+         required = obliga a completarlo
+         placeholder = guía al usuario -->
+    Nombre: 
+    <input type="text" name="nombre" required placeholder="Ingresa tu nombre completo"><br>
+
+    <!-- Campo numérico. 
+         type="number" solo permite números -->
+    Edad: 
+    <input type="number" name="edad" required placeholder="Ingresa tu edad"><br>
+
+    <!-- Campo para correo electrónico
+         type="email" valida que tenga formato correcto -->
+    Correo: 
+    <input type="email" name="correo" required placeholder="Ingresa tu email"><br>
+    
+    <!-- Campo para contraseña
+         type="password" oculta los caracteres ingresados -->
+    Password:
+    <input type="password" name="password" required placeholder="Ingresa la contraseña"><br>
+
+    <!-- Botón que envía el formulario -->
+    <button type="submit">Enviar</button>
+
+</form>
+
 </body>
 
 </html>
