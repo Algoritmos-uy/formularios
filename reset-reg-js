@@ -1,0 +1,10 @@
+ const form = document.getElementById("registroForm");
+
+  form.addEventListener("submit", function(event) {
+    // Si necesitas enviar por AJAX, evita el submit normal:
+    // event.preventDefault();
+
+    // Deja que el formulario se envíe normalmente...
+    // y luego lo reseteamos
+    setTimeout(() => form.reset(), 100); 
+  });

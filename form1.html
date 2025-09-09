@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <form action="">
+        <h2>Formulario de registro</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu email"><br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Escribe tu contraseña"><br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <hr>
+    <br>
+    <br>
+
+    <form action="" method="post" autocomplete="of">
+        <h2>Formulario de contacto</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu email" required><br><br>
+        <label for="asunto">Asunto:</label> <br>
+        <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto" required><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu mensaje aquí"
+            required></textarea><br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+
+
+    </form>
+
+
+</body>
+
+</html>

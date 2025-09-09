@@ -2,45 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro</title>
-    <link rel="stylesheet" href="stylereg.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulario de registro</title>
+     <link rel="stylesheet" href="stylereg.css">
 </head>
 
 <body>
 
-<!-- Formulario de registro de usuario -->
-<!-- action = destino donde se enviarán los datos
+
+
+     <!-- Formulario de registro de usuario -->
+     <!-- action = destino donde se enviarán los datos
      method = "post" es más seguro que "get" para contraseñas -->
-<form action="" method="post">
+     <form action="mailto:devgenerico@gmail.com" method="post" id="registroForm" autocomplete="off">
 
-    <!-- Campo de texto para el nombre completo
-         required = obliga a completarlo
-         placeholder = guía al usuario -->
-    Nombre: 
-    <input type="text" name="nombre" required placeholder="Ingresa tu nombre completo"><br>
+          <h2>Formulario De Registro</h2>
 
-    <!-- Campo numérico. 
-         type="number" solo permite números -->
-    Edad: 
-    <input type="number" name="edad" required placeholder="Ingresa tu edad"><br>
+          <label for="nombre">Nombre:</label>
+          <!-- Campo de texto para el nombre completo required = obliga a completarlo placeholder = guía al usuario -->
+          <input type="text" name="nombre" required placeholder="Ingresa tu nombre completo"><br>
 
-    <!-- Campo para correo electrónico
-         type="email" valida que tenga formato correcto -->
-    Correo: 
-    <input type="email" name="correo" required placeholder="Ingresa tu email"><br>
-    
-    <!-- Campo para contraseña
-         type="password" oculta los caracteres ingresados -->
-    Password:
-    <input type="password" name="password" required placeholder="Ingresa la contraseña"><br>
 
-    <!-- Botón que envía el formulario -->
-    <button type="submit">Enviar</button>
+          <label for="edad">Edad:</label>
+          <!-- Campo numérico. type="number" solo permite números -->
+          <input type="number" name="edad" required placeholder="Ingresa tu edad"><br>
 
-</form>
 
+          <label for="correo">Correo:</label>
+          <!-- Campo para correo electrónico type="email" valida que tenga formato correcto -->
+          <input type="email" name="correo" required placeholder="Ingresa tu email"><br>
+
+
+          <label for="password">Password:</label>
+          <!-- Campo para contraseña type="password" oculta los caracteres ingresados -->
+          <input type="password" name="password" required placeholder="Ingresa la contraseña"><br>
+
+          <!-- Botón que envía el formulario -->
+          <button type="submit">Enviar</button>
+          <!-- Botón que borra todos los campos del formulario -->
+          <button type="reset">Borrar</button>
+
+     </form>
+     <script src="reset-reg-js"></script>
 </body>
 
 </html>
