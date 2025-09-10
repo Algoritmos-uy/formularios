@@ -1,0 +1,14 @@
+body {
+    /* Establece la fuente principal para el texto del sitio */
+    font-family: Arial, sans-serif;
+    /* Define el color de fondo de la página */
+    background-color: #f2f2f2;
+    /* Usa flexbox para organizar los elementos hijos en columna */
+    display: flex;
+    /* Los elementos hijos se apilan verticalmente */
+    flex-direction: column;
+    /* Centra los elementos hijos horizontalmente */
+    align-items: center;
+    /* Hace que el cuerpo ocupe toda la altura de la ventana */
+    height: 100vh;
+}

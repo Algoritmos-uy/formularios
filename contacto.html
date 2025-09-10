@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylecontact.css">
+    <link rel="stylesheet" href="body-styles.css">
     <title>FORMULARIO DE CONTACTO</title>
 </head>
 
@@ -19,9 +20,11 @@
         <!-- Un título descriptivo para el formulario -->
         <h2>Formulario de Contacto</h2>
 
-        <!-- La etiqueta <label> describe el campo y se asocia al input mediante el atributo "for" -->
+        <!-- La etiqueta <label> describe el campo y se asocia al input 
+            mediante el atributo "for" -->
         <label for="nombre">Nombre:</label> <br>
-        <!-- Campo de texto para ingresar el nombre. "placeholder" muestra un texto guía "required" obliga a completar este campo -->
+        <!-- Campo de texto para ingresar el nombre. "placeholder" 
+         muestra un texto guía "required" obliga a completar este campo -->
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required> <br>
 
         <label for="apellido">Apellido:</label><br>
@@ -29,7 +32,8 @@
         <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required> <br>
 
         <label for="email">Correo Electrónico:</label><br>
-        <!-- Campo específico para correos electrónicos. El tipo "email" valida automáticamente el formato -->
+        <!-- Campo específico para correos electrónicos. 
+         El tipo "email" valida automáticamente el formato -->
         <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required><br>
 
         <label for="asunto">Asunto:</label><br>
@@ -37,11 +41,13 @@
         <input type="text" id="asunto" name="asunto" placeholder="Ingresa el asunto" required><br>
 
         <label for="mensaje">Mensaje:</label><br>
-        <!-- <textarea> permite escribir mensajes largos."rows" define la altura inicial -->
+        <!-- <textarea> permite escribir mensajes largos."rows" 
+            define la altura inicial -->
         <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea><br>
 
         <!-- Botón que envía los datos al destino definido en "action" -->
         <button type="submit">Enviar</button>
+
         <!-- Botón que limpia todos los campos del formulario -->
         <button type="reset">Borrar</button>
 

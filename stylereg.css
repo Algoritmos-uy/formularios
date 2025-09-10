@@ -1,67 +1,60 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
+/* Estilos para el título */
 h2 {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    color: #333;
-    font-weight: 800;
+    margin-top: 1rem; /* Espacio superior del título */
+    margin-bottom: 2rem; /* Espacio inferior del título */
+    color: #333; /* Color del texto del título */
+    font-weight: 800; /* Grosor de la fuente del título */
 }
 
+/* Estilos para el formulario */
 form {
-    margin: 0 auto;
-    width: 500px;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    width: 500px; /* Ancho fijo del formulario */
+    margin-top: 5rem; /* Espacio superior del formulario */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilos para las etiquetas de entrada */
 input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interno para comodidad */
+    margin: 10px 0; /* Espacio vertical entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
+/* Estilos para el botón */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 100%; /* El botón ocupa todo el ancho */
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #4caf50; /* Fondo verde para el botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
+/* Estilo para el botón al pasar el ratón */
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
 }
-
-/* ...existing code... */
 
 /* Estilo específico para el botón de borrar */
 button[type="reset"] {
-    background-color: #f44336;
-    color: white;
-    margin-top: 10px;
+    background-color: #f44336; /* Fondo rojo para el botón de borrar */
+    color: white; /* Texto blanco */
+    margin-top: 10px; /* Espacio superior para separar del botón enviar */
 }
 
 button[type="reset"]:hover {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* Fondo rojo más oscuro al pasar el mouse */
 }

@@ -1,69 +1,87 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f9;
-}
-
 /*estilos del formulario*/
 
+/* El selector 'form' aplica estilos al formulario principal */
 form {
+    /* Usa flexbox para organizar los elementos en columna */
     display: flex;
     flex-direction: column;
+    /* Centra los elementos horizontalmente */
     align-items: center;
+    /* Limita el ancho máximo del formulario */
     max-width: 550px;
+    /* Centra el formulario en la página */
     margin: 0 auto;
+    /* Espaciado interno alrededor de los elementos */
     padding: 1rem;
+    /* Fondo blanco para el formulario */
     background: #fff;
+    /* Bordes redondeados */
     border-radius: 8px;
+    /* Sombra para dar profundidad */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilos para los elementos del formulario */
 
+/* El selector 'label' estiliza las etiquetas descriptivas */
 label {
+    /* Texto en negrita para destacar */
     font-weight: bold;
+    /* Espacio inferior entre etiqueta y campo */
     margin-bottom: 5px;
+    /* Hace que la etiqueta ocupe toda la línea */
     display: block;
 }
 
 /* Estilos para los campos de entrada y el botón */
 
+/* Aplica estilos a todos los inputs, textarea y botones */
 input,
 textarea,
 button {
+    /* Ocupa todo el ancho disponible */
     width: 100%;
+    /* Espaciado interno para comodidad */
     padding: 10px;
+    /* Espacio inferior entre elementos */
     margin-bottom: 0.5rem;
+    /* Borde gris claro */
     border: 1px solid #ccc;
+    /* Bordes suavemente redondeados */
     border-radius: 4px;
 }
 
 /* Estilos específicos para el botón */
 
+/* El selector 'button' aplica a todos los botones */
 button {
+    /* Cambia el cursor a mano al pasar por encima */
     cursor: pointer;
 }
 
 /* Diferentes colores para los botones de enviar y borrar */
 
+/* Botón de enviar: color verde y texto blanco */
 button[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    font-weight: bold;
-    border: none;
+    background-color: #4caf50; /* Verde */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Sin borde */
 }
 
 /* Estilo para el botón de reset */
 
+/* Botón de borrar: color rojo y texto blanco */
 button[type="reset"] {
-    background-color: #f44336;
-    color: white;
-    font-weight: bold;
-    border: none;
+    background-color: #f44336; /* Rojo */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Sin borde */
 }
 
 /* Efecto hover para los botones */
 
+/* Al pasar el mouse, los botones se ven más tenues */
 button:hover {
-    opacity: 0.9;
+    opacity: 0.9; /* Reduce la opacidad para efecto visual */
 }

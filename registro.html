@@ -6,6 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Formulario de registro</title>
      <link rel="stylesheet" href="stylereg.css">
+     <link rel="stylesheet" href="body-styles.css">
 </head>
 
 <body>
@@ -15,27 +16,32 @@
      <!-- Formulario de registro de usuario -->
      <!-- action = destino donde se enviarán los datos
      method = "post" es más seguro que "get" para contraseñas -->
-     <form action="mailto:devgenerico@gmail.com" method="post" id="registroForm" autocomplete="off">
+
+     <form action="mailto:mail@gmail.com" method="post" id="registroForm" autocomplete="off">
 
           <h2>Formulario De Registro</h2>
 
-          <label for="nombre">Nombre:</label>
-          <!-- Campo de texto para el nombre completo required = obliga a completarlo placeholder = guía al usuario -->
-          <input type="text" name="nombre" required placeholder="Ingresa tu nombre completo"><br>
+          <!--La etiqueta <label> en HTML no define la estructura principal, 
+               sino que sirve como un rótulo o texto descriptivo 
+               para un elemento de formulario (como un <input>-->
 
+          <label for="nombre">Nombre:</label>
+          <!-- Campo de texto para el nombre completo required = 
+           obliga a completarlo placeholder = guía al usuario -->
+          <input type="text" name="nombre" required placeholder="Ingresa tu nombre completo"><br>
 
           <label for="edad">Edad:</label>
           <!-- Campo numérico. type="number" solo permite números -->
           <input type="number" name="edad" required placeholder="Ingresa tu edad"><br>
 
-
           <label for="correo">Correo:</label>
-          <!-- Campo para correo electrónico type="email" valida que tenga formato correcto -->
+          <!-- Campo para correo electrónico type="email" valida que 
+           tenga formato correcto -->
           <input type="email" name="correo" required placeholder="Ingresa tu email"><br>
 
-
           <label for="password">Password:</label>
-          <!-- Campo para contraseña type="password" oculta los caracteres ingresados -->
+          <!-- Campo para contraseña type="password" oculta los 
+           caracteres ingresados -->
           <input type="password" name="password" required placeholder="Ingresa la contraseña"><br>
 
           <!-- Botón que envía el formulario -->
